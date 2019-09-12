@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>magdArques</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101639058-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-101639058-1');
+</script>
+
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+	<style type="text/css" media="screen">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+			color: blue;
+			border-bottom: 3px solid blue;
+		}
+		body, select, option{
+			font-family: 'Merriweather', serif;
+			font-size: 22px;
+		}
+		header{
+			position: fixed;
+			padding: 15px;
+			font-size:1.75em;
+			line-height: 1.7em;
+		}
+		span{
+			font-weight: 400;
+			font-style: italic;
+		}
+		
+		.styled-select{
+			float: left;
+			margin: 0 15px 0 0 ;
+			border-radius: 0px;
+		}
+		select{
+			border: 0px solid blue;
+			background: transparent;
+			border-radius: 1px;
+		}
+		select, option{
+			color: blue;
+			height: auto;
+			font-size: 1em;
+		}
+		section{
+			margin-top: 250px;
+			padding: 15px;
+			width: 70%;
+			height: auto;
+			position: absolute;
+			top: 0;
+			z-index: -2;
+			overflow: hidden;
+		}
+		img{
+			width: 100%;
+		}
+		
+	</style>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101639058-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+	<header id="header" class="">
+		<p>
+		<div class="styled-select">
+		<select id="select">
+			<option value="1" data-foo="cat">hola!</option>
+			<option value="2" data-foo="eng">hi!</option>
+			<option value="3" data-foo="cast">¡hola!</option>
+		</select>
+		</div> 
+		<div id="texxt"></div>
+		</p>
+
+	</header><!-- /header -->
+	<section>
+		<img id="image" />
+	</section>
+<script type="text/javascript">
+		var description = [
+  "img/jo_2.jpg",
+  "img/jo_3.jpg",
+  "img/jo_4.jpg",
+  "img/jo_5.jpg"
+];
+
+var size = description.length
+var x = Math.floor(size*Math.random())
+document.getElementById('image').src=description[x];
+
+var sel = document.getElementById('select');
+var f=document.getElementById('foo');
+var v = document.getElementById('value');
+sel.onchange = function(){
+    var selected = sel.options[sel.selectedIndex];
+	v = sel.value;
+	if(v==1){
+	document.getElementById("texxt").innerHTML='<p>si voleu trobar-me bé per <a href="https://goo.gl/maps/uSEkhW5G8o32">aci</a>  o més fàcil per <a href="mailto:magdaarques@gmail.com">missatgeria</a>. Els meus <span>“jos”</span> em transporten a un <select id="select" onchange="location = this.options[this.selectedIndex].value;"><option value="#">devindre constant</option><option value="http://magdaarques.net/pages/amagantseeldia/">amagant-se el dia</option><option value="http://magdaarques.net/pages/night_sky/">nit</option><option value="http://magdaarques.net/pages/cloudyday/examples/">cloudy day</option></select> així que també ens podem trobar fluint en altres estats. Els mons que em fan reviure són diversos i paral<span>·</span>lels a la vida en pixel i en la coexistència d’<a href="http://topicatipica.tictail.com/">espais compartits</a>, la necessitat de catalogar i treballar amb <a href="http://arduino.comparteix.net">altres dimensions</a>, a la búsqueda del tot <strong><a href="http://gif.magdaarques.net">&#8629;</a></strong></p>';
+	}
+	if(v==2){
+	document.getElementById("texxt").innerHTML='<p>if do you like to find me you do it <a href="https://goo.gl/maps/uSEkhW5G8o32">here</a> or maybe with <a href="mailto:magdaarques@gmail.com">messaging</a>. My <span>“others egos”</span> carry me to a <select id="select" onchange="location = this.options[this.selectedIndex].value;"><option value="#">constant becoming </option><option value="http://magdaarques.net/pages/amagantseeldia/">hidden_day</option><option value="http://magdaarques.net/pages/night_sky/">night_sky</option><option value="http://magdaarques.net/pages/cloudyday/examples/">cloudy_day</option></select> so we can also find ourselves flowing between states of being. The worlds that make me relive are diverse and parallel to life in pixel and the coexistence of <a href="http://topicatipica.tictail.com/">shared spaces</a>, the need to catalog and work in other dimensions, to the search of the whole <strong><a href="http://gif.magdaarques.net">&#8629;</a></strong></p>';
+	}
+	if(v==3){
+	document.getElementById("texxt").innerHTML='<p>si queréis encontrarme bien lo podéis hacer por <a href="https://goo.gl/maps/uSEkhW5G8o32">aquí</a> o más fácil por <a href="mailto:magdaarques@gmail.com">mensajeria</a>. Mis <span>“yos”</span> me transportan a un <select id="select" onchange="location = this.options[this.selectedIndex].value;"><option value="#">devenir constante</option><option value="http://magdaarques.net/pages/amagantseeldia/">hidden_day</option><option value="http://magdaarques.net/pages/night_sky/">noche</option><option value="http://magdaarques.net/pages/cloudyday/examples/">cloudy_day</option></select> así que también nos podemos encontrar fluyendo entre estados. Los mundos que me hacen revivir son diversos y paralelos a la vida en pixel y en la coexistencia de <a href="http://topicatipica.tictail.com/">espacios compartidos</a>, la necesidad de catalogar y trabajar en <a href="http://arduino.comparteix.net">otras dimensiones</a>, a la búsqueda del todo <strong><a href="http://gif.magdaarques.net">&#8629;</a></strong></p>';
+	}
+};
+
+sel.onchange();
+	</script>
+		<!--<img src="img/jo_3.jpg" alt="jos">-->
+</body>
+
+</html>
